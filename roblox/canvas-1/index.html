@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, shrink-to-fit=0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <style>
+  html, body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  .animation-container {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  canvas {
+  }
+  </style>
+  <script>
+  // ------ CONFIGURATIONS ------
+  // These configurations are optional, you can leave them as-is
+  // or tweak them as desired.
+  window.CANVAS_CONFIG = {
+    color: '#00a2ff',
+    altColor: '#00a2ff',
+    background: 'black',
+    // How long it takes to animate in the 3D content
+    animateInDuration: 1,
+    // The URL base for the 3D assets
+    baseAssetsUrl: './',
+    // whether to show the faded black color overlay so the text comes through easier
+    showColorOverlay: true,
+    // whether to animate away the black faded color on click interaction
+    animateColorOverlay: true,
+    // % opacity of the black color overlay when idling
+    colorOverlayOpacity: 0.5,
+    // whether to animate in / out the header / caption
+    // set to false if you want to keep it up all the time or do your own animations
+    animateHeader: true,
+    animateCaption: true,
+    // (float number) # of seconds before we show the interaction text after click
+    captionShowAgainDelay: 6
+  };
+  </script>
+</head>
+<body>
+  <div class='animation-container'>
+    <canvas class="animation-canvas animation-0"></canvas>
+  </div>
+  <!-- The JS for canvas+webGL animations -->
+  <script src="bundle.js"></script>
+</body>
+</html>
