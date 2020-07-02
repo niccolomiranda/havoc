@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, shrink-to-fit=0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <style>
+  @font-face {
+    font-family: 'Circular';
+    src: url('./assets/CircularStd-Black.woff');
+  }
+  html, body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    font-family: 'Circular', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+  .webgl-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  .webgl-header-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    /* Remove text selection on the text element for smoother WebGL experience */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  </style>
+  <script>
+  // ------ CONFIGURATIONS ------
+  // These configurations are optional, you can leave them as-is
+  // or tweak them as desired.
+  window.CANVAS_CONFIG = {
+    color: '#00a2ff',
+    altColor: '#00a2ff',
+    background: 'black',
+    // How long it takes to animate in the 3D content
+    animateInDuration: 1,
+    // The URL base for the 3D assets
+    baseAssetsUrl: './',
+    // whether to show the faded black color overlay so the text comes through easier
+    showColorOverlay: true,
+    // whether to animate away the black faded color on click interaction
+    animateColorOverlay: true,
+    // % opacity of the black color overlay when idling
+    colorOverlayOpacity: 0.5,
+    // whether to animate in / out the header / caption
+    // set to false if you want to keep it up all the time or do your own animations
+    animateHeader: true,
+    animateCaption: true,
+    // (float number) # of seconds before we show the interaction text after click
+    captionShowAgainDelay: 6
+  };
+  </script>
+</head>
+<body>
+  <!-- This block needs to be copied for the WebGL -->
+  <div class="webgl-container">
+    <canvas class="webgl-canvas"></canvas>
+    <div class="webgl-header-container">
+      <div class="webgl-caption" style="visibility: hidden;">
+        <span class="webgl-interaction-type">Click + Drag</span> to Experience the Roblox World
+      </div>
+    </div>
+  </div>
+  <!-- The JS for canvas+webGL animations -->
+  <script src="bundle.js"></script>
+</body>
+</html>
