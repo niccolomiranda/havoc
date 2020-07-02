@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <title>THX</title>
+  <script type="text/javascript">
+    window._isSlowLoader = false;
+
+    // we can approximate load time w/ Chrome & Webkit
+    if (!/FireFox/i.test(navigator.userAgent)) {
+      window._slowLoadTimer = window.setTimeout(function() {
+        window._isSlowLoader = true;
+        document.querySelector('.logo.white').style.display = '';
+        document.querySelector('.loader').style.display = 'block';
+      }, 1000);
+
+      window.addEventListener('load', function() {
+        window.clearTimeout(window._slowLoadTimer);
+        window._slowLoadTimer = undefined;
+      }, false);
+    }
+  </script>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <canvas id="canvas" style="display: none;"></canvas>
+  <div class="noselect">
+    <div id="logo-container">
+      <img class="logo white" src="assets/svg/thx_white.svg" style="display: none;" />
+    </div>
+    <div class="loader" style="display: none;"></div>
+    <div class="info-container">
+      <div class="info" style="display: none;">
+        <div class="info-cycle">
+          <div class="info-volume">
+            turn up your <strong>volume</strong>
+          </div>
+          <div class="info-input">
+            <strong><span class="input-type">click</span> + hold</strong> to hear the deep note
+          </div>
+          <img class="info-icon" src="assets/svg/headphones3.svg" />
+        </div>
+      </div>
+    </div>
+    <div class="scroll-container">
+      <img class="scroll-icon" src="assets/svg/arrow2.svg" />
+    </div>
+    <div class="volume">
+      <img class="on" src="assets/svg/volume-on.svg" />
+      <img class="off" src="assets/svg/volume-off.svg" />
+    </div>
+  </div>
+  <script src="libs.js" defer></script>
+  <script src="bundle.js" defer></script>
+</body>
+</html>
