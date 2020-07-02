@@ -1,0 +1,57 @@
+[
+    {
+        "name" : "San Francisco",
+        "latlng": {
+           "lat" : 37.7749295,
+           "lng" : -122.4194155
+        },
+        "file": "data/sf.json",
+        "timezone": "America/Los_Angeles"
+    },
+    {
+        "name" : "Bangalore",
+        "latlng": {
+            "lat": 12.9715987,
+            "lng": 77.5945627
+        },
+        "file": "data/bangalore.json",
+        "timezone": "Asia/Colombo"
+    },
+    {
+        "name" : "Miami",
+        "latlng": {
+           "lat" : 25.7616798,
+           "lng" : -80.1917902
+        },
+        "file": "data/miami.json",
+        "timezone": "EST"
+    },
+    {
+        "name" : "Singapore",
+        "latlng": {
+            "lat" : 1.352083,
+            "lng" : 103.819836
+        },
+        "file": "data/singapore.json",
+        "timezone": "Asia/Singapore"
+    },
+    {
+        "name" : "Dubai",
+        "latlng": {
+           "lat" : 25.2048493,
+           "lng" : 55.2707828
+        },
+        "file": "data/dubai.json",
+        "timezone": "Asia/Dubai"
+    },
+    {
+        "name" : "São Paulo",
+        "latlng": {
+            "lat" : -23.5505199,
+           "lng" : -46.63330939999999
+        },
+        "file": "data/saopolo.json",
+        "timezone": "America/Sao_Paulo"
+    }
+]
+

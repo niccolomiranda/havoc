@@ -1,0 +1,85 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js ie ie6 lt-ie9 lt-ie8 lt-ie7" > <![endif]-->
+<!--[if IE 7]><html class="no-js ie ie7 lt-ie9 lt-ie8" > <![endif]-->
+<!--[if IE 8]><html class="no-js ie ie8 lt-ie9" > <![endif]-->
+<!--[if gt IE 8]>--><html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link type="text/css" rel="stylesheet" href="css/globe-main.css">
+        <script type="text/javascript" src="js/modernizr.js"></script>
+    </head>
+    <body>
+        <div id="globe-global-wrapper">
+            <div id="globe-buttons"></div>
+
+            <div id="globe-clock">
+                <div class="clock"></div>
+                <div class="city"><div class="inner"></div></div>
+                <div class="local"><div class="inner">Local Time</div></div>
+                <div class="time"><div class="inner"><div class="digits"></div><div class="ampm"></div></div></div>
+            </div>
+
+            <div id="intro-popup">
+                <div class="popup-wrapper">
+                    <div class="top">
+                        <div class="right">
+                            <a href="#" class="close">
+                                <div class="bg"></div>
+                                <div class="table"><div class="table-cell"><div class="ctn">X</div></div></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="inner">
+                        <div class="table">
+                            <div class="table-cell">
+                                <div class="popup-content intro-content show">
+                                    <div class="block block-1"><h1>Welcome to Visa<br>Innovation Centers</h1></div>
+                                    <div class="block block-2"><span>Our goal is to foster collaboration and deepen the relationships that we value most.<br><br>Scroll down to explore our innovation centers around the world.<br><br>Or, spin the globe to view the millions of transactions on the Visa network.</span></div>
+                                    <div class="block block-2 block-dash"><span class="dash"></span></div>
+                                </div>
+                                <div class="popup-content tip-content">
+                                    <div class="block block-2"><span>Visa is the world’s largest payment network, with the ability to process over 56,000 transactions per second for thousands of banks, millions of merchants and billions of people.<br><br>We’ve selected 6 cities to visualize the current international transactions in local time.<br><br>Click on any city icon to see transactions initiated by international accountholders.<br><br>The thickness of each line represents the volume of transactions based on real data.</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="no-webgl">
+                <div class="popup-wrapper">
+                    <div class="inner"> 
+                        <div class="table">
+                            <div class="table-cell">
+                                <div class="popup-content show">
+                                    <div class="block block-1"><h1>Welcome to Visa<br>Innovation Centers</h1></div>
+                                    <div class="block block-2"><span>Our goal is to foster collaboration and deepen the relationships that we value most.<br><br>Scroll down to explore our innovation centers around the world.</span></div>
+                                    <div class="block block-2 block-dash"><span class="dash"></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="question-mark">
+                <div class="bg">
+                    <svg width="45px" height="45px" viewBox="0 0 45 45">
+                        <circle cx="22" cy="22" r="20" fill="transparent" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="0.75, 6" stroke-opacity="0.5"/>
+                    </svg>
+                </div>
+                <div class="bg yellow"></div>
+                <div class="sign"><div class="table"><div class="table-cell">?</div></div></div>
+                <div class="sign top"><div class="table"><div class="table-cell">?</div></div></div> 
+            </a>
+        </div>
+        <script type="text/javascript" src="js/globe-vendors.js"></script>
+        <script type="text/javascript" src="js/globe-shaders.js"></script>
+        <script type="text/javascript" src="js/globe-app.js"></script>
+    </body>
+</html>
