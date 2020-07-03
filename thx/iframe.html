@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <title>THX — iFrame</title>
+  <style>
+  body {
+    margin: 0;
+  }
+  iframe {
+    outline: 0;
+    border: 0;
+    width: 100%;
+    display: block;
+  }
+  .content {
+    height: 800px;
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+  }
+  </style>
+</head>
+<body>
+  <iframe src="index.html?embedded" scrolling="no"></iframe>
+  <div class="content">(more content)</div>
+  <script>
+    var isIOS = /(iOS|iPod|iPad|iPhone)/i.test(navigator.userAgent);
+    var iframe = document.querySelector('iframe');
+    update();
+    window.addEventListener('orientationchange', function () {
+      update(); // for most mobile devices
+      setTimeout(function () { // for iPhone 5s, iOS 9
+        update();
+      }, 500);
+    });
+    function update () {
+      if (isIOS) {
+        iframe.style.width = window.innerWidth + 'px';
+        iframe.width = window.innerWidth + 'px';
+      }
+      iframe.height = window.innerHeight + 'px';
+    }
+  </script>
+</body>
+</html>
